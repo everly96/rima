@@ -1,0 +1,1329 @@
+@charset "UTF-8";
+html, body {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  font-family: "나눔스퀘어라운드";
+  font-weight: bold;
+  color: #525450;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+a:hover {
+  color: #8E9DE8;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+header #title {
+  font-size: 2vw;
+  float: left;
+  margin: 2%;
+}
+header #gnb {
+  float: right;
+  margin: 2% 2% 0 0;
+}
+header #gnb .btn {
+  float: left;
+  margin-left: 4vw;
+  font-size: 2vw;
+}
+header #gnb .btn a {
+  cursor: pointer;
+}
+header #gnb li:first-child.active .xi-home::before {
+  content: "";
+}
+header #gnb li:nth-child(2).active .xi-user::before {
+  content: "";
+}
+header #gnb li:nth-child(3).active .xi-folder::before {
+  content: "";
+}
+header #gnb li:last-child.active .xi-message::before {
+  content: "";
+}
+header.active0 {
+  opacity: 0;
+}
+header.active1 {
+  opacity: 1;
+}
+
+#wrap {
+  overflow: hidden;
+  height: 100%;
+}
+
+#wrap .container {
+  height: 100%;
+}
+
+.area {
+  width: 100%;
+  height: 100vh;
+  font-size: 30px;
+}
+
+#main {
+  overflow: hidden;
+  background-size: 100px 100px cover cover;
+}
+#main #mobile {
+  display: none;
+}
+#main #sub_title {
+  background-size: 100%;
+  height: 100%;
+  font: 8vw/1 Arial;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#main #sub_title .text--line {
+  font-size: 0.7em;
+}
+#main #sub_title svg {
+  width: 100%;
+  height: 100%;
+}
+#main #sub_title .text-copy {
+  fill: none;
+  stroke-dasharray: 7% 28%;
+  stroke-width: 4px;
+  -webkit-animation: stroke-offset 5s linear;
+          animation: stroke-offset 5s linear;
+}
+#main #sub_title .text-copy:nth-child(1) {
+  stroke: #8E9DE8;
+  stroke-dashoffset: 7%;
+}
+#main #sub_title .text-copy:nth-child(2) {
+  stroke: #94BDF2;
+  stroke-dashoffset: 14%;
+}
+#main #sub_title .text-copy:nth-child(3) {
+  stroke: #90C5DB;
+  stroke-dashoffset: 21%;
+}
+#main #sub_title .text-copy:nth-child(4) {
+  stroke: #94EFF2;
+  stroke-dashoffset: 28%;
+}
+#main #sub_title .text-copy:nth-child(5) {
+  stroke: #8EE8D2;
+  stroke-dashoffset: 35%;
+}
+@-webkit-keyframes stroke-offset {
+  50% {
+    stroke-dashoffset: 35%;
+    stroke-dasharray: 0 87.5%;
+  }
+}
+@keyframes stroke-offset {
+  50% {
+    stroke-dashoffset: 35%;
+    stroke-dasharray: 0 87.5%;
+  }
+}
+
+#about {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+#about #photo {
+  position: absolute;
+  top: 26%;
+  left: 10%;
+  width: 17vw;
+  height: 25rem;
+  background: url("../images/face_photo.JPG") no-repeat #fff;
+  background-size: 100%;
+}
+#about #middle_m {
+  display: none;
+}
+#about #middle {
+  width: 49vw;
+  height: 20vh;
+  position: absolute;
+  top: 19%;
+  right: 15%;
+}
+#about #middle .m_info dt {
+  margin: 4% 0 6% 0;
+  line-height: 1.2;
+  font-size: 2vw;
+}
+#about #middle .m_info dd:nth-child(2) {
+  font-size: 1.8vw;
+}
+#about #middle .m_info dd:nth-child(2)::after {
+  content: "";
+  display: block;
+  margin: 2% 0 5% 0;
+  background: #90C5DB;
+  width: 12em;
+  height: 0.5vh;
+}
+#about #middle .m_info dd:nth-child(3) {
+  font-size: 1.3vw;
+}
+#about #middle .m_info dd:nth-child(3) .xi-full-moon {
+  font-size: 0.5vw;
+  vertical-align: middle;
+  color: #fcf9f9;
+}
+#about #skill {
+  position: absolute;
+  bottom: 0;
+  left: 36%;
+  width: 20%;
+  height: 37%;
+}
+#about #skill dl {
+  font-size: 1.6vw;
+}
+#about #skill dl dt {
+  line-height: 1;
+}
+#about #skill dl dt::after {
+  content: "";
+  display: block;
+  margin: 2% 0 5% 0;
+  background: #90C5DB;
+  width: 12em;
+  height: 0.5vh;
+}
+#about #skill dl dd {
+  font-size: 0.6em;
+  margin-bottom: 2%;
+}
+#about #right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 36%;
+  height: 40%;
+}
+#about #right #inner {
+  position: relative;
+  width: 100%;
+  height: 60%;
+}
+#about #right #inner #icon {
+  position: absolute;
+  top: 10%;
+  left: 2%;
+  width: 20%;
+  height: 100%;
+}
+#about #right #inner #icon h3 {
+  font-size: 1.5vw;
+}
+#about #right #inner #icon h3::after {
+  content: "";
+  display: inline-block;
+  margin-bottom: 6%;
+  background: #90C5DB;
+  width: 13.7em;
+  height: 0.5vh;
+}
+#about #right #inner #icon p {
+  margin-top: 15%;
+  width: 27%;
+  height: 15%;
+}
+#about #right #inner #icon #cs1 {
+  margin: 0;
+  background: url(../images/ai.png) no-repeat center center;
+  background-size: contain;
+}
+#about #right #inner #icon #cs2 {
+  background: url(../images/psd.png) no-repeat center center;
+  background-size: contain;
+}
+#about #right #inner #icon #cs3 {
+  background: url(../images/dw.png) no-repeat center center;
+  background-size: contain;
+}
+#about #right #inner #icon #cs4 {
+  background: url(../images/ex.png) no-repeat center center;
+  background-size: contain;
+}
+#about #right #inner .stick {
+  position: absolute;
+  top: 35%;
+  left: 9%;
+  width: 50%;
+}
+#about #right #inner .stick p {
+  margin-top: 8.5%;
+}
+#about #right #inner .stick p:first-child {
+  margin-top: 1%;
+}
+#about #right #inner .stick .count {
+  display: block;
+  text-align: right;
+  padding: 1%;
+  font-size: 1vw;
+  color: #fff;
+  width: 10%;
+}
+#about #right #inner .stick #ai {
+  background: #330000;
+  margin: 0;
+}
+#about #right #inner .stick #psd {
+  background: #001e36;
+}
+#about #right #inner .stick #vs {
+  background: #300528;
+}
+#about #right #inner .stick #ex {
+  background: #2d6845;
+}
+
+#portfolio {
+  position: relative;
+  overflow: hidden;
+}
+#portfolio .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+#portfolio .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+#portfolio .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#portfolio .swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+#portfolio .swiper-button-next, #portfolio .swiper-button-prev {
+  color: #525450;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#portfolio .swiper-button-next:hover, #portfolio .swiper-button-prev:hover {
+  color: #fff;
+}
+#portfolio .swiper-button-next, #portfolio .swiper-container-rtl .swiper-button-prev {
+  right: 30px;
+  left: auto;
+}
+#portfolio .swiper-button-prev, #portfolio .swiper-container-rtl .swiper-button-next {
+  left: 30px;
+  right: auto;
+}
+#portfolio .swiper-pagination {
+  margin-bottom: 12px;
+}
+#portfolio .swiper-pagination .swiper-pagination-bullet-active-main {
+  background-color: #fff;
+}
+#portfolio .swiper-pagination .swiper-pagination-bullet-active-next {
+  background-color: #525450;
+}
+#portfolio .swiper-pagination .swiper-pagination-bullet-active-next-next {
+  background-color: #525450;
+}
+#portfolio .page1 {
+  background: #eee6e6;
+}
+#portfolio .page1 #left {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#portfolio .page1 #left #title {
+  position: absolute;
+  top: 15%;
+  width: 50%;
+}
+#portfolio .page1 #left #title h1 {
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+#portfolio .page1 #left #title h2 {
+  display: inline-block;
+  width: 40%;
+  margin: 8% 0 0 8%;
+}
+#portfolio .page1 #left #title h2 img {
+  width: 100%;
+}
+#portfolio .page1 #left #site_btn {
+  font-size: 2vw;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  bottom: 28%;
+  left: 18%;
+  padding: 0.7% 3%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border-radius: 5px;
+  background: #fff;
+}
+#portfolio .page1 #left #site_btn:hover {
+  background: #966f38;
+}
+#portfolio .page1 #left #site_btn:hover a {
+  color: #fff;
+}
+#portfolio .page1 #left #work_info {
+  position: absolute;
+  bottom: 7%;
+  left: 15%;
+  width: 100%;
+  text-align: left;
+}
+#portfolio .page1 #left #work_info p {
+  font-size: 1.2rem;
+}
+#portfolio .page1 #left #work_info span {
+  font-weight: bold;
+  margin-right: 1%;
+}
+#portfolio .page1 #right #mac {
+  position: absolute;
+  width: 50%;
+  bottom: 10%;
+  right: 5%;
+}
+#portfolio .page1 #right #mac img {
+  width: 100%;
+}
+#portfolio .page1 #right #mac .site {
+  width: 59.55%;
+  height: 57.29%;
+  position: absolute;
+  top: 4.59%;
+  left: 19.85%;
+  background: url("../images/works/catsdog_full.png") no-repeat 0 top;
+  background-size: 100% auto;
+}
+#portfolio .page2 {
+  background: #E4E0D7;
+}
+#portfolio .page2 #left2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#portfolio .page2 #left2 #title2 {
+  position: absolute;
+  top: 15%;
+  width: 50%;
+}
+#portfolio .page2 #left2 #title2 h1 {
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+#portfolio .page2 #left2 #title2 h2 {
+  display: inline-block;
+  width: 35%;
+  margin: 8% 0 0 8%;
+}
+#portfolio .page2 #left2 #title2 h2 img {
+  width: 100%;
+}
+#portfolio .page2 #left2 #site_btn2 {
+  font-size: 2vw;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  bottom: 28%;
+  left: 19%;
+  padding: 0.7% 3%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border-radius: 5px;
+  background: #fff;
+}
+#portfolio .page2 #left2 #site_btn2:hover {
+  background: #C7B18E;
+}
+#portfolio .page2 #left2 #site_btn2:hover a {
+  color: #fff;
+}
+#portfolio .page2 #left2 #work_info2 {
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
+  width: 100%;
+  text-align: left;
+}
+#portfolio .page2 #left2 #work_info2 p {
+  font-size: 1.2rem;
+}
+#portfolio .page2 #left2 #work_info2 span {
+  font-weight: bold;
+  margin-right: 1%;
+}
+#portfolio .page2 #right2 #mac2 {
+  position: absolute;
+  width: 50%;
+  bottom: 10%;
+  right: 5%;
+}
+#portfolio .page2 #right2 #mac2 img {
+  width: 100%;
+}
+#portfolio .page2 #right2 #mac2 .site {
+  width: 59.55%;
+  height: 57.29%;
+  position: absolute;
+  top: 4.59%;
+  left: 19.85%;
+  background: url("../images/works/decorare_full.png") no-repeat 0 top;
+  background-size: 100% auto;
+}
+#portfolio .page3 {
+  background: #BEA5A5;
+}
+#portfolio .page3 #left3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#portfolio .page3 #left3 #title3 {
+  position: absolute;
+  top: 15%;
+  width: 50%;
+}
+#portfolio .page3 #left3 #title3 h1 {
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+#portfolio .page3 #left3 #title3 h2 {
+  display: inline-block;
+  width: 25%;
+  margin: 8% 0 0 11%;
+}
+#portfolio .page3 #left3 #title3 h2 img {
+  width: 100%;
+}
+#portfolio .page3 #left3 .btn {
+  position: absolute;
+  bottom: 28%;
+  left: 12%;
+  width: 60%;
+}
+#portfolio .page3 #left3 .btn #site_btn3 {
+  font-size: 2vw;
+  font-weight: bold;
+  float: left;
+  display: inline-block;
+  padding: 1% 5%;
+  margin-right: 3%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border-radius: 5px;
+  background: #fff;
+  color: #51534f;
+}
+#portfolio .page3 #left3 .btn #site_btn3:hover {
+  background: #785656;
+}
+#portfolio .page3 #left3 .btn #site_btn3:hover a {
+  color: #fff;
+}
+#portfolio .page3 #left3 .btn #site_btn3_1 {
+  font-size: 2vw;
+  font-weight: bold;
+  float: left;
+  display: inline-block;
+  padding: 1% 3%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border-radius: 5px;
+  background: #fff;
+  color: #51534f;
+}
+#portfolio .page3 #left3 .btn #site_btn3_1:hover {
+  background: #785656;
+}
+#portfolio .page3 #left3 .btn #site_btn3_1:hover a {
+  color: #fff;
+}
+#portfolio .page3 #left3 #work_info3 {
+  position: absolute;
+  bottom: 10%;
+  left: 12%;
+  width: 100%;
+  text-align: left;
+}
+#portfolio .page3 #left3 #work_info3 p {
+  font-size: 1.2rem;
+}
+#portfolio .page3 #left3 #work_info3 span {
+  font-weight: bold;
+  margin-right: 1%;
+}
+#portfolio .page3 #right3 #mac3 {
+  position: absolute;
+  width: 50%;
+  bottom: 15%;
+  right: 5%;
+}
+#portfolio .page3 #right3 #mac3 img {
+  width: 100%;
+}
+#portfolio .page4 {
+  background: #E4E6ED;
+}
+#portfolio .page4 #left4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#portfolio .page4 #left4 #title4 {
+  position: absolute;
+  top: 15%;
+  width: 50%;
+}
+#portfolio .page4 #left4 #title4 h1 {
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+#portfolio .page4 #left4 #title4 h2 {
+  display: inline-block;
+  width: 31%;
+  margin: 3% 0 0 11%;
+}
+#portfolio .page4 #left4 #title4 h2 img {
+  width: 100%;
+}
+#portfolio .page4 #left4 .btn {
+  position: absolute;
+  bottom: 28%;
+  left: 12%;
+  width: 60%;
+}
+#portfolio .page4 #left4 .btn #site_btn4 {
+  font-size: 2vw;
+  font-weight: bold;
+  float: left;
+  display: inline-block;
+  padding: 1% 5%;
+  margin-right: 3%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border-radius: 5px;
+  background: #fff;
+  color: #51534f;
+}
+#portfolio .page4 #left4 .btn #site_btn4:hover {
+  background: #8E97B6;
+}
+#portfolio .page4 #left4 .btn #site_btn4:hover a {
+  color: #fff;
+}
+#portfolio .page4 #left4 .btn #site_btn4_1 {
+  font-size: 2vw;
+  font-weight: bold;
+  float: left;
+  display: inline-block;
+  padding: 1% 3%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border-radius: 5px;
+  background: #fff;
+  color: #51534f;
+}
+#portfolio .page4 #left4 .btn #site_btn4_1:hover {
+  background: #8E97B6;
+}
+#portfolio .page4 #left4 .btn #site_btn4_1:hover a {
+  color: #fff;
+}
+#portfolio .page4 #left4 #work_info4 {
+  position: absolute;
+  bottom: 12%;
+  left: 11%;
+  width: 100%;
+  text-align: left;
+}
+#portfolio .page4 #left4 #work_info4 p {
+  font-size: 1.2rem;
+}
+#portfolio .page4 #left4 #work_info4 span {
+  font-weight: bold;
+  margin-right: 1%;
+}
+#portfolio .page4 #right4 #mac4 {
+  position: absolute;
+  width: 46;
+  bottom: 16%;
+  right: 7%;
+}
+#portfolio .page4 #right4 #mac4 img {
+  width: 100%;
+}
+#portfolio .page5 {
+  background: #BDB8B4;
+}
+#portfolio .page5 #left5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#portfolio .page5 #left5 #title5 {
+  position: absolute;
+  top: 15%;
+  width: 50%;
+}
+#portfolio .page5 #left5 #title5 h1 {
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+#portfolio .page5 #left5 #title5 h2 {
+  display: inline-block;
+  width: 50%;
+  margin: 12% 0 0 10%;
+}
+#portfolio .page5 #left5 #title5 h2 img {
+  width: 100%;
+}
+#portfolio .page5 #left5 .btn {
+  position: absolute;
+  bottom: 28%;
+  left: 12%;
+  width: 60%;
+}
+#portfolio .page5 #left5 .btn #site_btn5 {
+  font-size: 2vw;
+  font-weight: bold;
+  float: left;
+  display: inline-block;
+  padding: 1% 5%;
+  margin-right: 3%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border-radius: 5px;
+  background: #fff;
+  color: #51534f;
+}
+#portfolio .page5 #left5 .btn #site_btn5:hover {
+  background: #716861;
+}
+#portfolio .page5 #left5 .btn #site_btn5:hover a {
+  color: #fff;
+}
+#portfolio .page5 #left5 .btn #site_btn5_1 {
+  font-size: 2vw;
+  font-weight: bold;
+  float: left;
+  display: inline-block;
+  padding: 1% 3%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border-radius: 5px;
+  background: #fff;
+  color: #51534f;
+}
+#portfolio .page5 #left5 .btn #site_btn5_1:hover {
+  background: #716861;
+}
+#portfolio .page5 #left5 .btn #site_btn5_1:hover a {
+  color: #fff;
+}
+#portfolio .page5 #left5 #work_info5 {
+  position: absolute;
+  bottom: 12%;
+  left: 11%;
+  width: 100%;
+  text-align: left;
+}
+#portfolio .page5 #left5 #work_info5 p {
+  font-size: 1.2rem;
+}
+#portfolio .page5 #left5 #work_info5 span {
+  font-weight: bold;
+  margin-right: 1%;
+}
+#portfolio .page5 #right5 #mac5 {
+  position: absolute;
+  width: 44%;
+  bottom: 15%;
+  right: 8%;
+}
+#portfolio .page5 #right5 #mac5 img {
+  width: 100%;
+}
+
+@-webkit-keyframes cursor {
+  0% {
+    border-right: 1px solid #4672b8;
+  }
+  50% {
+    border-right: 1px solid #000;
+  }
+  100% {
+    border-right: 1px solid #4672b8;
+  }
+}
+
+@keyframes cursor {
+  0% {
+    border-right: 1px solid #4672b8;
+  }
+  50% {
+    border-right: 1px solid #000;
+  }
+  100% {
+    border-right: 1px solid #4672b8;
+  }
+}
+#contact {
+  position: relative;
+  background-size: 100px 100px cover cover;
+}
+#contact #txt {
+  position: absolute;
+  top: 27%;
+  left: 7%;
+}
+#contact #txt p.typing-txt {
+  display: none;
+}
+#contact #txt .typing {
+  display: inline-block;
+  font-size: 3vw;
+  -webkit-animation: cursor 0.3s infinite;
+          animation: cursor 0.3s infinite;
+}
+#contact #address {
+  position: absolute;
+  bottom: 5%;
+  right: 6%;
+  text-align: right;
+}
+#contact #address #name {
+  margin-bottom: 5%;
+  font-size: 2.5vw;
+}
+#contact #address #call {
+  line-height: 1.2;
+  font-size: 1.8vw;
+  position: relative;
+}
+#contact #address #call #mail_ad {
+  cursor: pointer;
+}
+#contact #address #call #mail_ad #xeicon {
+  position: absolute;
+  bottom: 71%;
+  left: 27%;
+  -webkit-transform: skewY(23deg);
+          transform: skewY(23deg);
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#contact #address #call #mail_ad #xeicon.action {
+  opacity: 0;
+}
+#contact #address #call #mail_ad:hover #xeicon {
+  color: #8E9DE8;
+}
+#contact #address #call #mail {
+  width: 20vw;
+  height: 33vh;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: left;
+  -webkit-box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  position: absolute;
+  bottom: 96%;
+  right: 57%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+}
+#contact #address #call #mail.show {
+  opacity: 1;
+}
+#contact #address #call #mail #contact-form {
+  margin: 4%;
+  font-size: 1.2vw;
+  padding: 2% 0 0 2%;
+}
+#contact #address #call #mail #contact-form p {
+  margin-bottom: 2%;
+}
+#contact #address #call #mail #contact-form p textarea {
+  background: rgba(255, 255, 255, 0.1);
+  border: 0;
+  outline: 0;
+}
+#contact #address #call #mail #contact-form p input {
+  border: 0;
+  border-bottom: 1px solid #000;
+  background: none;
+  outline: 0;
+}
+#contact #address #call #mail #contact-form p:first-child {
+  margin-top: 43;
+}
+#contact #address #call #mail #contact-form p:last-child {
+  margin: 0;
+  margin: 15% 2% 0 0;
+  float: right;
+}
+#contact #address #call #mail #contact-form p:last-child:hover {
+  background: #aaa;
+}
+#contact #address #call #mail #contact-form p:last-child:hover input {
+  color: #000;
+}
+#contact #address #call #mail #contact-form p:last-child input {
+  color: #fff;
+  padding: 1%;
+  border: 1px solid rgba(170, 170, 170, 0.5);
+}
+
+@media (max-width: 1024px) {
+  #about #right #inner .stick .count {
+    margin-top: 3.6vw;
+  }
+}
+@media (max-width: 481px) {
+  header #title {
+    font-size: 7vw;
+  }
+  header #gnb .btn {
+    font-size: 6vw;
+  }
+
+  #main #sub_title {
+    display: none;
+  }
+  #main #mobile {
+    display: block;
+    background-size: 100%;
+    height: 100%;
+    font: 8vw/1 Arial;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  #main #mobile .text--line {
+    font-size: 0.7em;
+  }
+  #main #mobile svg {
+    width: 100%;
+    height: 100%;
+  }
+  #main #mobile .text-copy {
+    fill: none;
+    stroke-dasharray: 7% 28%;
+    stroke-width: 2px;
+    -webkit-animation: stroke-offset 5s linear;
+            animation: stroke-offset 5s linear;
+  }
+  #main #mobile .text-copy:nth-child(1) {
+    stroke: #8E9DE8;
+    stroke-dashoffset: 7%;
+  }
+  #main #mobile .text-copy:nth-child(2) {
+    stroke: #94BDF2;
+    stroke-dashoffset: 14%;
+  }
+  #main #mobile .text-copy:nth-child(3) {
+    stroke: #90C5DB;
+    stroke-dashoffset: 21%;
+  }
+  #main #mobile .text-copy:nth-child(4) {
+    stroke: #94EFF2;
+    stroke-dashoffset: 28%;
+  }
+  #main #mobile .text-copy:nth-child(5) {
+    stroke: #8EE8D2;
+    stroke-dashoffset: 35%;
+  }
+  @-webkit-keyframes stroke-offset {
+    50% {
+      stroke-dashoffset: 35%;
+      stroke-dasharray: 0 87.5%;
+    }
+  }
+  @keyframes stroke-offset {
+    50% {
+      stroke-dashoffset: 35%;
+      stroke-dasharray: 0 87.5%;
+    }
+  }
+
+  #about #photo {
+    top: 9%;
+    left: 32%;
+    width: 35vw;
+    height: 16rem;
+  }
+  #about #middle {
+    display: none;
+  }
+  #about #middle_m {
+    display: block;
+    position: absolute;
+    width: 65vw;
+    height: 20vh;
+    top: 35%;
+    right: 15%;
+  }
+  #about #middle_m .m_info dt {
+    margin: 6% 0 4% 0;
+    line-height: 1.2;
+    font-size: 4vw;
+  }
+  #about #middle_m .m_info dd:nth-child(2) {
+    font-size: 4vw;
+  }
+  #about #middle_m .m_info dd:nth-child(2)::after {
+    content: "";
+    display: block;
+    margin: 2% 0 5% 0;
+    background: #90C5DB;
+    width: 12em;
+    height: 0.5vh;
+  }
+  #about #middle_m .m_info dd:nth-child(3) {
+    font-size: 2.8vw;
+  }
+  #about #middle_m .m_info dd:nth-child(3) .xi-full-moon {
+    font-size: 0.5vw;
+    vertical-align: middle;
+    color: #fcf9f9;
+  }
+  #about #skill {
+    position: absolute;
+    bottom: 7%;
+    left: 20%;
+    width: 50%;
+    height: 37%;
+  }
+  #about #skill dl {
+    font-size: 4vw;
+  }
+  #about #skill dl dt {
+    line-height: 1;
+  }
+  #about #skill dl dt::after {
+    content: "";
+    display: block;
+    margin: 2% 0 5% 0;
+    background: #90C5DB;
+    width: 12em;
+    height: 0.5vh;
+  }
+  #about #skill dl dd {
+    font-size: 2.8vw;
+    margin-bottom: 2%;
+  }
+  #about #right {
+    position: absolute;
+    right: 0;
+    bottom: 7%;
+    width: 82%;
+    height: 24%;
+  }
+  #about #right #inner {
+    position: relative;
+    width: 100%;
+    height: 60%;
+  }
+  #about #right #inner #icon {
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    width: 20%;
+    height: 100%;
+  }
+  #about #right #inner #icon h3 {
+    font-size: 4vw;
+  }
+  #about #right #inner #icon h3::after {
+    content: "";
+    display: inline-block;
+    margin-bottom: 6%;
+    background: #90C5DB;
+    width: 13.7em;
+    height: 0.5vh;
+  }
+  #about #right #inner #icon p {
+    margin-top: 6%;
+    width: 36%;
+    height: 26%;
+  }
+  #about #right #inner #icon #cs1 {
+    margin: 0;
+    background: url(../images/ai.png) no-repeat center center;
+    background-size: contain;
+  }
+  #about #right #inner #icon #cs2 {
+    background: url(../images/psd.png) no-repeat center center;
+    background-size: contain;
+  }
+  #about #right #inner #icon #cs3 {
+    background: url(../images/dw.png) no-repeat center center;
+    background-size: contain;
+  }
+  #about #right #inner #icon #cs4 {
+    background: url(../images/ex.png) no-repeat center center;
+    background-size: contain;
+  }
+  #about #right #inner .stick {
+    position: absolute;
+    top: 43%;
+    left: 11%;
+    width: 60%;
+  }
+  #about #right #inner .stick p {
+    margin-top: 0%;
+  }
+  #about #right #inner .stick .count {
+    display: block;
+    text-align: right;
+    padding: 1%;
+    margin-top: 2.5vw;
+    font-size: 4vw;
+    color: #fff;
+    width: 10%;
+  }
+  #about #right #inner .stick #ai {
+    background: #330000;
+    margin: 0;
+  }
+  #about #right #inner .stick #psd {
+    background: #001e36;
+  }
+  #about #right #inner .stick #vs {
+    background: #300528;
+  }
+  #about #right #inner .stick #ex {
+    background: #2d6845;
+  }
+
+  #portfolio .page1 #left #title {
+    width: 100%;
+    top: 16%;
+  }
+  #portfolio .page1 #left #title h1 {
+    font-size: 7vw;
+  }
+  #portfolio .page1 #left #title h2 {
+    margin: 0;
+    margin-top: 12%;
+    width: 70%;
+  }
+  #portfolio .page1 #left #site_btn {
+    font-size: 10vw;
+    bottom: 33%;
+    left: 24%;
+    padding: 3% 8%;
+  }
+  #portfolio .page1 #left #work_info {
+    line-height: 1.8em;
+    bottom: 11%;
+    left: 10%;
+  }
+  #portfolio .page1 #left #work_info p {
+    font-size: 1.5rem;
+  }
+  #portfolio .page1 #right #mac {
+    display: none;
+  }
+  #portfolio .page2 #left2 #title2 {
+    width: 100%;
+    top: 16%;
+  }
+  #portfolio .page2 #left2 #title2 h1 {
+    font-size: 7vw;
+  }
+  #portfolio .page2 #left2 #title2 h2 {
+    margin: 0;
+    margin-top: 12%;
+    width: 70%;
+  }
+  #portfolio .page2 #left2 #site_btn2 {
+    font-size: 10vw;
+    bottom: 33%;
+    left: 24%;
+    padding: 3% 8%;
+  }
+  #portfolio .page2 #left2 #work_info2 {
+    line-height: 1.8em;
+    bottom: 11%;
+    left: 10%;
+  }
+  #portfolio .page2 #left2 #work_info2 p {
+    font-size: 1.5rem;
+  }
+  #portfolio .page2 #right2 #mac2 {
+    display: none;
+  }
+  #portfolio .page3 #left3 #title3 {
+    width: 100%;
+    top: 16%;
+  }
+  #portfolio .page3 #left3 #title3 h1 {
+    font-size: 6.5vw;
+  }
+  #portfolio .page3 #left3 #title3 h2 {
+    margin: 0;
+    margin-top: 12%;
+    width: 48%;
+  }
+  #portfolio .page3 #left3 .btn {
+    width: 100%;
+    bottom: 26%;
+  }
+  #portfolio .page3 #left3 .btn #site_btn3 {
+    font-size: 8vw;
+    padding: 2% 6%;
+    margin-left: 15%;
+  }
+  #portfolio .page3 #left3 .btn #site_btn3_1 {
+    font-size: 8vw;
+    padding: 2% 6%;
+    margin: 3% 0 3% 11%;
+  }
+  #portfolio .page3 #left3 #work_info3 {
+    line-height: 1.8em;
+    bottom: 10%;
+    left: 10%;
+  }
+  #portfolio .page3 #left3 #work_info3 p {
+    font-size: 1.5rem;
+  }
+  #portfolio .page3 #right3 #mac3 {
+    display: none;
+  }
+  #portfolio .page4 #left4 #title4 {
+    width: 100%;
+    top: 16%;
+  }
+  #portfolio .page4 #left4 #title4 h1 {
+    font-size: 6.5vw;
+  }
+  #portfolio .page4 #left4 #title4 h2 {
+    margin: 0;
+    margin-top: 5%;
+    width: 48%;
+  }
+  #portfolio .page4 #left4 .btn {
+    width: 100%;
+    bottom: 26%;
+  }
+  #portfolio .page4 #left4 .btn #site_btn4 {
+    font-size: 8vw;
+    padding: 2% 6%;
+    margin-left: 15%;
+  }
+  #portfolio .page4 #left4 .btn #site_btn4_1 {
+    font-size: 8vw;
+    padding: 2% 6%;
+    margin: 3% 0 3% 11%;
+  }
+  #portfolio .page4 #left4 #work_info4 {
+    line-height: 1.8em;
+    bottom: 10%;
+    left: 10%;
+  }
+  #portfolio .page4 #left4 #work_info4 p {
+    font-size: 1.5rem;
+  }
+  #portfolio .page4 #right4 #mac4 {
+    display: none;
+  }
+  #portfolio .page5 #left5 #title5 {
+    width: 100%;
+    top: 16%;
+  }
+  #portfolio .page5 #left5 #title5 h1 {
+    font-size: 6.5vw;
+  }
+  #portfolio .page5 #left5 #title5 h2 {
+    margin: 0;
+    margin-top: 22%;
+    width: 66%;
+  }
+  #portfolio .page5 #left5 .btn {
+    width: 100%;
+    bottom: 30%;
+  }
+  #portfolio .page5 #left5 .btn #site_btn5 {
+    font-size: 8vw;
+    padding: 2% 6%;
+    margin-left: 15%;
+  }
+  #portfolio .page5 #left5 .btn #site_btn5_1 {
+    font-size: 8vw;
+    padding: 2% 6%;
+    margin: 3% 0 3% 11%;
+  }
+  #portfolio .page5 #left5 #work_info5 {
+    line-height: 1.8em;
+    bottom: 10%;
+    left: 10%;
+  }
+  #portfolio .page5 #left5 #work_info5 p {
+    font-size: 1.5rem;
+  }
+  #portfolio .page5 #right5 #mac5 {
+    display: none;
+  }
+
+  #contact #txt .typing {
+    font-size: 8vw;
+    line-height: 1.5em;
+  }
+  #contact #address {
+    bottom: 14%;
+  }
+  #contact #address #name {
+    font-size: 8vw;
+    margin-bottom: 1%;
+  }
+  #contact #address #call {
+    font-size: 6vw;
+  }
+  #contact #address #call #mail {
+    width: 44vw;
+    right: 50%;
+    line-height: 1.3;
+  }
+}

@@ -1,0 +1,116 @@
+@charset "UTF-8";
+html, body { height: 100%; }
+
+body { height: 9000px; font-family: '나눔스퀘어라운드'; font-weight: bold; }
+
+@-webkit-keyframes showItem { from { -webkit-transform: var(--transform); transform: var(--transform);
+    opacity: 0; }
+  to { -webkit-transform: translate(0, 0) scale(1, 1) rotate(0); transform: translate(0, 0) scale(1, 1) rotate(0);
+    opacity: 1; } }
+
+@keyframes showItem { from { -webkit-transform: var(--transform); transform: var(--transform);
+    opacity: 0; }
+  to { -webkit-transform: translate(0, 0) scale(1, 1) rotate(0); transform: translate(0, 0) scale(1, 1) rotate(0);
+    opacity: 1; } }
+
+#part1 { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background: #fcf9f5; }
+
+#part1 .circle { position: absolute; border-radius: 200px; -webkit-animation: showItem .6s ease .1s both; animation: showItem .6s ease .1s both; }
+
+#part1 .nth1 { width: 27%; height: 60%; background: url("../images/works/circle01.png") no-repeat; background-size: contain; top: -9%; left: 20%; -webkit-filter: drop-shadow(4px 4px 2px #aaa); filter: drop-shadow(4px 4px 2px #aaa); --transfrom:translate(0,-50px) scale(0.9,0.9); }
+
+#part1 .nth2 { width: 18%; height: 39%; background: url("../images/works/circle02.png") no-repeat; background-size: contain; bottom: -8%; right: -2%; -webkit-filter: drop-shadow(-4px -4px 2px #aaa); filter: drop-shadow(-4px -4px 2px #aaa); --transfrom:translate(50px,0) scale(0.9,0.9); -webkit-animation-delay: .4s; animation-delay: .4s; }
+
+#part1 .nth2 img { -webkit-transform: rotate(-67deg); transform: rotate(-67deg); }
+
+#part1 .nth3 { width: 14%; height: 30%; background: url("../images/works/circle03.png") no-repeat; background-size: contain; bottom: 10%; left: -2%; -webkit-filter: drop-shadow(4px -4px 2px #aaa); filter: drop-shadow(4px -4px 2px #aaa); --transfrom:translate(-50px,0) scale(0.9,0.9); -webkit-animation-delay: .8s; animation-delay: .8s; }
+
+#part1 .nth3 img { -webkit-transform: rotate(158deg) rotateY(-180deg); transform: rotate(158deg) rotateY(-180deg); }
+
+#part1 #title { position: absolute; top: 38%; left: 12%; font-size: 2.3vw; -webkit-transition: all .2s; transition: all .2s; }
+
+#part1 #mac { position: absolute; width: 50%; bottom: 14%; left: 40%; z-index: 1; --transform:translate(0,-40px) scale(0.7,0.7); -webkit-animation: showItem 1s ease .8s both; animation: showItem 1s ease .8s both; -webkit-transition: all .2s; transition: all .2s; }
+
+#part1 #mac img { width: 100%; }
+
+#part1 #mac .site { width: 59.55%; height: 57.29%; position: absolute; top: 4.59%; left: 19.85%; background: url("../images/works/catsdog_full.png") no-repeat 0 top; background-size: 100% auto; }
+
+#part1 .site { -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5) inset; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5) inset; overflow: hidden; -webkit-transition: all .2s; transition: all .2s; }
+
+#part1 .site::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #fff; opacity: .1; -webkit-transform: skewY(55deg); transform: skewY(55deg); }
+
+#part2 { position: fixed; top: 100%; left: 0; width: 100%; height: 100vh; z-index: 100; background: #fdf1e1; -webkit-transition: all .2s; transition: all .2s; }
+
+#part2 #title2 { position: absolute; top: 10%; left: 15%; font-weight: bold; }
+
+#part2 #title2 h4 { font-size: 1vw; margin-bottom: 2%; }
+
+#part2 #title2 h3 { font-size: 2vw; }
+
+#part2 #sub { position: absolute; top: 25%; left: 25%; }
+
+#part2 #sub #type { display: inline-block; }
+
+#part2 #sub #type #concept { float: left; }
+
+#part2 #sub #type #concept dl { width: 50%; }
+
+#part2 #sub #type #concept dt { font-size: 1.5vw; margin-bottom: 5%; }
+
+#part2 #sub #type #concept dd { font-size: 1vw; line-height: 1.2; }
+
+#part2 #sub #type #concept dd:nth-child(2) { margin-bottom: 2%; }
+
+#part2 #sub #type #concept dl:first-child { margin-bottom: 5%; }
+
+#part2 #sub #type #main_color { float: left; }
+
+#part2 #sub #type #main_color li::before { content: ''; display: inline-block; margin: 0 5% 15% 0; width: 50px; height: 50px; border: 1px solid #000; border-radius: 10%; }
+
+#part2 #sub #type #main_color li:nth-child(2)::before { background: #e39831; }
+
+#part2 #sub #type #main_color li:nth-child(3)::before { background: #cd9a31; }
+
+#part2 #sub #type #main_color li:nth-child(4)::before { background: #ffffff; }
+
+#part2 #sub #type #main_color li:nth-child(5)::before { background: #f3e9c1; }
+
+#part2 #sub #type #main_color li { font-size: 1vw; display: inline-block; margin-top: 10%; }
+
+#part2 #sub #type #main_color li:first-child { font-size: 1.5vw; display: block; margin: 0; }
+
+#part2 #sub #type #main_color li:first-child::before { display: none; }
+
+#part2 #sub #img { margin-top: 5%; display: inline-block; width: 100%; }
+
+#part2 #sub #img .img1 { font-size: 1.5vw; float: left; }
+
+#part2 #sub #img .img1 p { display: inline-block; }
+
+#part2 #sub #img .img1 img { width: 78%; margin-left: 5%; }
+
+#part2 #sub #img .img2 { font-size: 1.5vw; float: left; padding-left: 10%; }
+
+#part2 #sub #img .img2 p { display: inline-block; }
+
+#part2 #sub #img .img2 img { width: 72%; margin-left: 5%; }
+
+#part2 #full { width: 80%; height: 150%; position: absolute; top: 5%; left: 15%; display: inline-block; }
+
+#part2 #full #info { width: 25%; height: 100%; margin-left: 10%; float: left; }
+
+#part2 #full #info .title3 h4 { font-size: 1.3vw; margin-bottom: 2%; }
+
+#part2 #full #info .title3 p { font-size: 1vw; line-height: 1.3; word-wrap: break-word; }
+
+#part2 #full #info .title3:nth-child(1) { margin-top: 40%; }
+
+#part2 #full #info .title3:nth-child(2) { margin-top: 75%; }
+
+#part2 #full #info .title3:nth-child(3) { margin-top: 33%; }
+
+#part2 #full #info .title3:nth-child(4) { margin-top: 50%; }
+
+#part2 #full #info .title3:nth-child(5) { margin-top: 22%; }
+
+#part2 #full .site_full { width: 32%; height: 100%; float: right; margin-right: 9%; background: url("../images/works/catsdog_full.png") no-repeat; background-size: contain; }

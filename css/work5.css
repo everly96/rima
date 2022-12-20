@@ -1,0 +1,337 @@
+@charset "UTF-8";
+html,
+body {
+  position: relative;
+  font-size: 1vw;
+  height: 100%;
+}
+
+body {
+  font-family: "나눔스퀘어라운드";
+  color: #fff;
+  overflow: hidden;
+}
+body a {
+  text-decoration: none;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-container .swiper-slide {
+  display: flex;
+}
+
+.swiper-wrapper .page1 {
+  background: #5C5957;
+}
+.swiper-wrapper .page1 #left {
+  position: absolute;
+  width: 50%;
+  height: 75%;
+  bottom: 14%;
+  left: 7%;
+}
+.swiper-wrapper .page1 #left #title {
+  position: absolute;
+  top: 7%;
+  left: 11%;
+  width: 100%;
+}
+.swiper-wrapper .page1 #left #title h1 {
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+.swiper-wrapper .page1 #left #title h2 {
+  display: inline-block;
+  width: 44%;
+  margin: 19% 0 0 7%;
+}
+.swiper-wrapper .page1 #left #title h2 img {
+  width: 100%;
+}
+.swiper-wrapper .page1 #left .btn {
+  position: absolute;
+  bottom: 21%;
+  left: 10%;
+  width: 56%;
+}
+.swiper-wrapper .page1 #left .btn #site_btn {
+  font-size: 2em;
+  font-weight: bold;
+  float: left;
+  display: inline-block;
+  padding: 1% 5%;
+  transition: all 0.4s;
+  border-radius: 5px;
+  background: #fff;
+  color: #51534f;
+}
+.swiper-wrapper .page1 #left .btn #site_btn:hover {
+  background: #277C7C;
+  color: #fff;
+}
+.swiper-wrapper .page1 #left .btn #mobile_btn {
+  font-size: 2em;
+  font-weight: bold;
+  float: left;
+  margin-left: 14%;
+  display: inline-block;
+  padding: 1% 5%;
+  cursor: pointer;
+  transition: all 0.4s;
+  border-radius: 5px;
+  background: #fff;
+  color: #51534f;
+}
+.swiper-wrapper .page1 #left .btn #mobile_btn:hover {
+  background: #277C7C;
+  color: #fff;
+}
+.swiper-wrapper .page1 #left #work_info {
+  position: absolute;
+  bottom: 0;
+  left: 11%;
+  width: 40%;
+}
+.swiper-wrapper .page1 #left #work_info p {
+  font-size: 1.2rem;
+}
+.swiper-wrapper .page1 #left #work_info span {
+  font-weight: bold;
+  margin-right: 1%;
+}
+.swiper-wrapper .page1 #right #mac {
+  position: absolute;
+  width: 65%;
+  bottom: 26%;
+  right: 0;
+}
+.swiper-wrapper .page1 #right #mac img {
+  width: 100%;
+}
+.swiper-wrapper .page2 .g_right {
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.swiper-wrapper .page2 .guide {
+  position: absolute;
+  right: 0;
+  bottom: 13%;
+  font-weight: bold;
+  width: 36%;
+}
+.swiper-wrapper .page2 .guide h3 {
+  font-size: 1.8rem;
+  color: #55564F;
+}
+.swiper-wrapper .page2 .guide #line {
+  width: 100%;
+  height: 0.5rem;
+  border-radius: 4px;
+  background: #EEE6E6;
+  margin-top: 2%;
+}
+.swiper-wrapper .page2 .guide p {
+  color: #8C8A8A;
+  font-size: 1.2rem;
+  margin: 3% 0;
+}
+.swiper-wrapper .page2 .info_bg {
+  width: 80%;
+  height: 90%;
+  background: #277C7C;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 5%;
+}
+.swiper-wrapper .page2 .info_left {
+  float: left;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 10% 8% 0 12%;
+  text-align: center;
+}
+.swiper-wrapper .page2 .info_left li {
+  margin: 67% 0 100%;
+}
+.swiper-wrapper .page2 .info_left li:first-child {
+  margin-top: 0;
+}
+.swiper-wrapper .page2 .info_right {
+  float: left;
+  font-size: 1.2em;
+  margin-top: 4%;
+  width: 67%;
+  line-height: 1.2;
+}
+.swiper-wrapper .page2 .info_right li {
+  margin: 8% 0;
+}
+.swiper-wrapper .page2 .info_right span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.swiper-wrapper .page2 .info_right li:nth-child(3) {
+  margin-top: 9%;
+}
+.swiper-wrapper .page2 .info_right li:last-child {
+  margin-top: -1%;
+}
+.swiper-wrapper .page2 .info_right #c_letter {
+  width: 76%;
+}
+.swiper-wrapper .page2 .info_right #key {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+.swiper-wrapper .page2 .info_right #key li {
+  margin: 0 3%;
+  display: inline-block;
+  border-radius: 60px;
+  background: #8D8B88;
+}
+.swiper-wrapper .page2 .info_right #key li:nth-child(1) {
+  padding: 5.5% 3%;
+  margin-left: 0;
+}
+.swiper-wrapper .page2 .info_right #key li:nth-child(2) {
+  padding: 6% 2%;
+}
+.swiper-wrapper .page2 .info_right #key li:nth-child(3) {
+  padding: 6% 2.5%;
+}
+.swiper-wrapper .page2 .info_right #color li {
+  margin: 0 5%;
+  display: inline-block;
+}
+.swiper-wrapper .page2 .info_right #color li p {
+  width: 150%;
+  height: 5%;
+  text-indent: -9999px;
+  margin-bottom: 16%;
+}
+.swiper-wrapper .page2 .info_right #color li:nth-child(1) {
+  margin-left: 0;
+}
+.swiper-wrapper .page2 .info_right #color li:nth-child(1) p {
+  background: #060809;
+}
+.swiper-wrapper .page2 .info_right #color li:nth-child(2) p {
+  background: #0C1225;
+}
+.swiper-wrapper .page2 .info_right #color li:nth-child(3) p {
+  background: #283275;
+  width: 230%;
+  padding-top: 3%;
+  margin-bottom: 22%;
+}
+.swiper-wrapper .page2 .info_right #font span {
+  display: inline-block;
+}
+.swiper-wrapper .page2 .info_right #font #f_01 {
+  font-family: "Montserrat";
+}
+.swiper-wrapper .page2 .info_right #font #f_02 {
+  font-family: "Nanum Gothic";
+}
+.swiper-wrapper .page2 .info_right #font #f_03 {
+  font-family: "돋움";
+}
+.swiper-wrapper .page3 .site {
+  position: absolute;
+  right: 0%;
+  top: 4%;
+  font-weight: bold;
+  width: 15%;
+  color: #51534f;
+}
+.swiper-wrapper .page3 .site h3 {
+  font-size: 2rem;
+}
+.swiper-wrapper .page3 .site #line {
+  width: 100%;
+  height: 0.5rem;
+  border-radius: 4px;
+  background: #eee6e6;
+  margin-top: 2%;
+}
+.swiper-wrapper .page3 .site p {
+  color: #8C8A8A;
+  font-size: 1.2rem;
+  margin: 3% 0;
+}
+.swiper-wrapper .page3 .site_bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80%;
+  height: 100%;
+  background: #5C5957;
+}
+.swiper-wrapper .page3 #s01_all {
+  width: 20%;
+  margin: 2% 0 0 12%;
+  float: left;
+}
+.swiper-wrapper .page3 #s01_all img {
+  width: 100%;
+}
+.swiper-wrapper .page3 #s02_all {
+  width: 33%;
+  margin: 2% 12% 0 0;
+  float: right;
+}
+.swiper-wrapper .page3 #s02_all img {
+  width: 100%;
+}
+.swiper-wrapper .page4 .full {
+  position: absolute;
+  left: 0%;
+  bottom: 13%;
+  font-weight: bold;
+  text-align: right;
+  width: 15%;
+  color: #51534f;
+}
+.swiper-wrapper .page4 .full h3 {
+  font-size: 2rem;
+}
+.swiper-wrapper .page4 .full #line {
+  width: 100%;
+  height: 0.5rem;
+  border-radius: 4px;
+  background: #eee6e6;
+  margin-top: 2%;
+}
+.swiper-wrapper .page4 .full p {
+  color: #8C8A8A;
+  font-size: 1.2rem;
+  margin: 3% 0;
+}
+.swiper-wrapper .page4 .page_f {
+  position: absolute;
+  bottom: 0;
+  right: 3%;
+  width: 80%;
+  height: 90%;
+}
+.swiper-wrapper .page4 .page_f iframe {
+  transform-origin: left top;
+  box-shadow: -8px -8px 5px #eee6e6;
+}
+
+.swiper-button-next::after {
+  color: #DBC0AE;
+}
+
+.swiper-button-prev::after {
+  color: #DBC0AE;
+}
