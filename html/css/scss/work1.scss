@@ -130,6 +130,7 @@ body {
     } //e:guide
     .info_bg {
       width: 70%;
+      background: #eee6e6;
       position: absolute;
       right: 0;
       top: 0;
@@ -283,7 +284,7 @@ body {
   color: #dbc0ae;
 }
 
-@media (max-width: 1600px) {
+@media all and (max-width: 1600px) {
   .swiper-wrapper {
     .page2 .info_list {
       height: 10rem;
@@ -295,7 +296,7 @@ body {
     }
   }
 }
-@media (max-width: 1181px) {
+@media all and (max-width: 1181px) {
   .swiper-wrapper {
     .page1 {
       #left {
@@ -314,7 +315,7 @@ body {
     }
   }
 }
-@media (max-width: 481px) {
+@media all and (max-width: 481px) {
   .swiper-wrapper {
     .page1 {
       flex-direction: column-reverse;
@@ -360,7 +361,7 @@ body {
         width: 85%;
       }
       .info_list {
-        height: 35rem;
+        height: 30rem;
         flex-direction: column;
         justify-content: flex-start;
       }
@@ -433,6 +434,7 @@ body {
     } //page3
   }
 } //480 X 836
+
 /*
 pc
 1500px

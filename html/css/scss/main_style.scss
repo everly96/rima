@@ -103,6 +103,18 @@ nav {
     grid-template-rows: repeat(4, minmax(100px, auto));
     align-items: center;
     overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 8px; /* 스크롤바의 너비 */
+    }
+    &::-webkit-scrollbar-thumb {
+      height: 30%; /* 스크롤바의 길이 */
+      background: #217af4; /* 스크롤바의 색상 */
+      border-radius: 100px;
+    }
+    &::-webkit-scrollbar-track {
+      background: rgba(33, 122, 244, 0.1); /*스크롤바 뒷 배경 색상*/
+      border-radius: 100px;
+    }
   }
   .item {
     padding: 1rem 0;
@@ -201,6 +213,18 @@ nav {
     justify-content: space-evenly;
     margin: 0 auto;
     align-content: space-around;
+    &::-webkit-scrollbar {
+      width: 8px; /* 스크롤바의 너비 */
+    }
+    &::-webkit-scrollbar-thumb {
+      height: 30%; /* 스크롤바의 길이 */
+      background: #217af4; /* 스크롤바의 색상 */
+      border-radius: 100px;
+    }
+    &::-webkit-scrollbar-track {
+      background: rgba(33, 122, 244, 0.1); /*스크롤바 뒷 배경 색상*/
+      border-radius: 100px;
+    }
     .item_w {
       width: 45rem;
       border: 1px solid #000;
@@ -497,6 +521,7 @@ nav {
     margin: 0;
   }
 }
+
 /* 모바일 가로, 테블릿 세로 (해상도 768px ~ 909px)*/
 @media all and (max-width: 909px) {
   header {
@@ -660,7 +685,7 @@ nav {
     }
   } //page4_end
 }
-/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
+
 @media all and (max-width: 767px) {
   header {
     height: 6rem;
@@ -763,7 +788,7 @@ nav {
   }
 }
 
-/* 모바일 가로, 테블릿 세로 (해상도 ~ 470px)*/
+/* 모바일 세로 (해상도 469px ~ 766px)*/
 @media all and (max-width: 470px) {
   nav {
     width: 45%;
@@ -825,7 +850,7 @@ nav {
       }
     }
   } //page2_end
-}
+} //320 X 533
 
 /*
 
