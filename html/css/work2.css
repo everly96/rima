@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html,
 body {
   position: relative;
@@ -24,6 +25,21 @@ body a {
   display: flex;
 }
 
+.swiper-wrapper h3 {
+  font-size: 2rem;
+}
+.swiper-wrapper #line {
+  width: 100%;
+  height: 0.5rem;
+  border-radius: 4px;
+  background: #eeede8;
+  margin-top: 2%;
+}
+.swiper-wrapper .g_item {
+  color: #8c8a8a;
+  font-size: 1.5rem;
+  margin: 3% 0;
+}
 .swiper-wrapper .page1 {
   background: #e4e0d7;
   justify-content: center;
@@ -87,7 +103,7 @@ body a {
   background-size: 100% auto;
 }
 .swiper-wrapper .page2 .info_bg {
-  width: 80%;
+  width: 80vw;
   background: #eeede8;
   margin: auto 0;
 }
@@ -95,7 +111,7 @@ body a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 8rem;
+  height: 9vw;
 }
 .swiper-wrapper .page2 .info_title {
   font-weight: bold;
@@ -107,6 +123,7 @@ body a {
   font-size: 1.2em;
   width: 67%;
   line-height: 1.2;
+  word-break: keep-all;
 }
 .swiper-wrapper .page2 .info_text span {
   font-size: 1.5rem;
@@ -142,17 +159,15 @@ body a {
   align-items: center;
 }
 .swiper-wrapper .page2 #color li {
-  margin: 0 5%;
   display: inline-block;
+  font-size: 1.2rem;
+  width: 7vw;
+  line-height: 1.5rem;
+  text-align: center;
 }
 .swiper-wrapper .page2 #color li p {
-  width: 120%;
-  height: 5%;
   text-indent: -9999px;
-  margin-bottom: 16%;
-}
-.swiper-wrapper .page2 #color li:nth-child(1) {
-  margin-left: 3%;
+  margin-bottom: 8%;
 }
 .swiper-wrapper .page2 #color li:nth-child(1) p {
   background: #e4e0d7;
@@ -167,7 +182,7 @@ body a {
   font-size: 1.5em;
 }
 .swiper-wrapper .page2 .g_right {
-  width: 40%;
+  width: 40vw;
   height: 100%;
   background: #e4ddd5;
   position: absolute;
@@ -183,21 +198,6 @@ body a {
   font-weight: bold;
   width: 36%;
 }
-.swiper-wrapper .page2 .guide h3 {
-  font-size: 1.8rem;
-}
-.swiper-wrapper .page2 .guide #line {
-  width: 100%;
-  height: 0.5rem;
-  border-radius: 4px;
-  background: #fff8f8;
-  margin-top: 2%;
-}
-.swiper-wrapper .page2 .guide p {
-  color: #8c8a8a;
-  font-size: 1.2rem;
-  margin: 3% 0;
-}
 .swiper-wrapper .page3 {
   justify-content: space-between;
 }
@@ -205,11 +205,14 @@ body a {
   width: 70%;
   background: #e4e0d7;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
+.swiper-wrapper .page3 .site_bg p {
+  width: 30%;
+}
 .swiper-wrapper .page3 .site_bg img {
-  width: 80%;
+  width: 100%;
 }
 .swiper-wrapper .page3 .info_case {
   width: 22%;
@@ -218,28 +221,17 @@ body a {
   justify-content: space-between;
 }
 .swiper-wrapper .page3 .s_info {
-  font-size: 1.5em;
-  padding: 5% 10% 0 0;
+  padding: 20% 10% 0 0;
   line-height: 1.2;
+}
+.swiper-wrapper .page3 .s_info p {
+  margin: 0;
+  color: #000;
+  font-size: 1.5em;
 }
 .swiper-wrapper .page3 .site {
   font-weight: bold;
   padding-bottom: 10%;
-}
-.swiper-wrapper .page3 .site h3 {
-  font-size: 2rem;
-}
-.swiper-wrapper .page3 .site #line {
-  width: 100%;
-  height: 0.5rem;
-  border-radius: 4px;
-  background: #e4e0d7;
-  margin-top: 2%;
-}
-.swiper-wrapper .page3 .site p {
-  color: #8c8a8a;
-  font-size: 1.2rem;
-  margin: 3% 0;
 }
 
 .swiper-button-next::after {
@@ -249,3 +241,245 @@ body a {
 .swiper-button-prev::after {
   color: #dbc0ae;
 }
+
+@media all and (max-width: 1441px) {
+  .swiper-wrapper .page1 #left {
+    width: 45%;
+  }
+  .swiper-wrapper .page1 #left #title h1 {
+    font-size: 3.5vw;
+  }
+  .swiper-wrapper .page1 #left #title h2 {
+    margin: 11% auto;
+  }
+  .swiper-wrapper .page1 #left #site_btn {
+    margin-bottom: 8%;
+  }
+  .swiper-wrapper .page1 #left #site_btn a {
+    font-size: 3rem;
+    padding: 2% 6%;
+  }
+  .swiper-wrapper .page1 #left #work_info p {
+    font-size: 2rem;
+  }
+  .swiper-wrapper .page1 #right {
+    width: 45%;
+  }
+  .swiper-wrapper .page2 .info_list {
+    height: 12vw;
+  }
+  .swiper-wrapper .page2 .info_title {
+    font-size: 2.3em;
+    width: 22vw;
+  }
+  .swiper-wrapper .page2 .info_text {
+    font-size: 1.8rem;
+    width: 55vw;
+  }
+  .swiper-wrapper .page2 .info_text span {
+    font-size: 2rem;
+  }
+  .swiper-wrapper .page2 #key li {
+    font-size: 1.8rem;
+    width: 10vw;
+    padding: 4vw 0;
+  }
+  .swiper-wrapper .page2 #color li {
+    font-size: 1.8rem;
+    width: 9vw;
+    line-height: 2rem;
+  }
+  .swiper-wrapper .page2 #font {
+    font-size: 2rem;
+  }
+  .swiper-wrapper .page2 .guide {
+    width: 40%;
+  }
+  .swiper-wrapper .page3 .site_bg {
+    justify-content: center;
+  }
+  .swiper-wrapper .page3 .site_bg p {
+    width: 40%;
+  }
+  .swiper-wrapper .page3 .s_info p {
+    font-size: 2rem;
+  }
+}
+@media all and (max-width: 921px) {
+  .swiper-wrapper .page1 #left {
+    width: 40%;
+  }
+  .swiper-wrapper .page1 #left #title h1 {
+    font-size: 3vw;
+  }
+  .swiper-wrapper .page1 #left #title h2 {
+    margin: 4% auto;
+  }
+  .swiper-wrapper .page1 #left #site_btn {
+    margin-bottom: 4%;
+  }
+  .swiper-wrapper .page1 #left #site_btn a {
+    font-size: 2.5rem;
+  }
+  .swiper-wrapper .page1 #left #work_info p {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .swiper-wrapper .page1 #right {
+    width: 40%;
+  }
+  .swiper-wrapper .page2 .info_bg {
+    width: 70vw;
+  }
+  .swiper-wrapper .page2 .info_list {
+    height: 9vw;
+  }
+  .swiper-wrapper .page2 .info_title {
+    width: 20vw;
+    font-size: 2rem;
+  }
+  .swiper-wrapper .page2 .info_text {
+    font-size: 1.5rem;
+    width: 50vw;
+  }
+  .swiper-wrapper .page2 .info_text span {
+    font-size: 1.8rem;
+  }
+  .swiper-wrapper .page2 #key li {
+    font-size: 1.5rem;
+    width: 8vw;
+    padding: 3vw 0;
+  }
+  .swiper-wrapper .page2 #color li {
+    font-size: 1.5rem;
+    width: 8vw;
+    line-height: 1.5rem;
+  }
+  .swiper-wrapper .page2 #font {
+    font-size: 1.5rem;
+  }
+  .swiper-wrapper .page3 .site_bg p {
+    width: 30%;
+  }
+  .swiper-wrapper .page3 .info_case {
+    width: 25%;
+  }
+}
+@media all and (max-width: 830px), (max-width: 1025px) and (orientation: portrait) {
+  .swiper-wrapper .page1 {
+    flex-direction: column-reverse;
+  }
+  .swiper-wrapper .page1 #left {
+    width: 60%;
+  }
+  .swiper-wrapper .page1 #left #title h1 {
+    font-size: 5vw;
+  }
+  .swiper-wrapper .page1 #left #title h2 img {
+    width: 60%;
+  }
+  .swiper-wrapper .page1 #left #site_btn a {
+    font-size: 4rem;
+  }
+  .swiper-wrapper .page1 #left #work_info p {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .swiper-wrapper .page1 #right {
+    width: 60%;
+  }
+  .swiper-wrapper .page2 .g_right {
+    width: 100vw;
+    height: 30vh;
+    top: auto;
+  }
+  .swiper-wrapper .page2 .info_bg {
+    width: 85vw;
+    height: 85vh;
+    margin: 0;
+  }
+  .swiper-wrapper .page2 .info_bg .info_all {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+  }
+  .swiper-wrapper .page2 .info_list {
+    height: 20vw;
+  }
+  .swiper-wrapper .page2 .info_title {
+    width: 28vw;
+    font-size: 3.5rem;
+  }
+  .swiper-wrapper .page2 .info_text {
+    font-size: 2.5rem;
+  }
+  .swiper-wrapper .page2 .info_text span {
+    font-size: 3rem;
+  }
+  .swiper-wrapper .page2 #key li {
+    font-size: 3rem;
+    width: 14vw;
+    padding: 5vw 0;
+  }
+  .swiper-wrapper .page2 #color li {
+    font-size: 2.5rem;
+    width: 14vw;
+    line-height: 3rem;
+  }
+  .swiper-wrapper .page2 #font {
+    font-size: 3rem;
+  }
+  .swiper-wrapper .page2 .guide {
+    width: 100%;
+    text-align: right;
+  }
+  .swiper-wrapper .page3 {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .swiper-wrapper .page3 .site_bg {
+    width: 100vw;
+    height: 70vh;
+  }
+  .swiper-wrapper .page3 .site_bg p {
+    width: 45%;
+  }
+  .swiper-wrapper .page3 .site {
+    text-align: right;
+  }
+  .swiper-wrapper .page3 .s_info {
+    padding: 6% 0 0 11%;
+    width: 85%;
+    text-align: right;
+  }
+  .swiper-wrapper .page3 .s_info p {
+    font-size: 3rem;
+  }
+  .swiper-wrapper .page3 .info_case {
+    width: 100vw;
+  }
+  .swiper-wrapper .g_item {
+    font-size: 2.5rem;
+    margin: 2% 0;
+    padding-right: 1%;
+  }
+  .swiper-wrapper h3 {
+    font-size: 3rem;
+    padding-right: 1%;
+  }
+  .swiper-wrapper #line {
+    display: inline-block;
+    width: 30vw;
+    text-align: right;
+  }
+}
+/*
+1600
+1180
+481
+
+(orientation:portrait) _세로모드
+(orientation:landscape) _가로모드
+*/

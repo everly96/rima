@@ -27,6 +27,21 @@ body {
 } //e:.swiper-container
 
 .swiper-wrapper {
+  h3 {
+    font-size: 2rem;
+  }
+  #line {
+    width: 100%;
+    height: 0.5rem;
+    border-radius: 4px;
+    background: #eeede8;
+    margin-top: 2%;
+  }
+  .g_item {
+    color: #8c8a8a;
+    font-size: 1.5rem;
+    margin: 3% 0;
+  }
   .page1 {
     background: #e4e0d7;
     justify-content: center;
@@ -96,7 +111,7 @@ body {
 
   .page2 {
     .info_bg {
-      width: 80%;
+      width: 80vw;
       background: #eeede8;
       margin: auto 0;
     }
@@ -104,7 +119,7 @@ body {
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      height: 8rem;
+      height: 9vw;
     }
     .info_title {
       font-weight: bold;
@@ -116,6 +131,7 @@ body {
       font-size: 1.2em;
       width: 67%;
       line-height: 1.2;
+      word-break: keep-all;
       span {
         font-size: 1.5rem;
         font-weight: bold;
@@ -150,17 +166,17 @@ body {
         align-items: center;
       }
       li {
-        margin: 0 5%;
         display: inline-block;
+        font-size: 1.2rem;
+        width: 7vw;
+        line-height: 1.5rem;
+        text-align: center;
         p {
-          width: 120%;
-          height: 5%;
           text-indent: -9999px;
-          margin-bottom: 16%;
+          margin-bottom: 8%;
         }
       }
       li:nth-child(1) {
-        margin-left: 3%;
         p {
           background: #e4e0d7;
         }
@@ -180,7 +196,7 @@ body {
       font-size: 1.5em;
     }
     .g_right {
-      width: 40%;
+      width: 40vw;
       height: 100%;
       background: #e4ddd5;
       position: absolute;
@@ -195,21 +211,6 @@ body {
       bottom: 13%;
       font-weight: bold;
       width: 36%;
-      h3 {
-        font-size: 1.8rem;
-      }
-      #line {
-        width: 100%;
-        height: 0.5rem;
-        border-radius: 4px;
-        background: #fff8f8;
-        margin-top: 2%;
-      }
-      p {
-        color: #8c8a8a;
-        font-size: 1.2rem;
-        margin: 3% 0;
-      }
     } //e:guide
   } //e:page2
 
@@ -219,10 +220,13 @@ body {
       width: 70%;
       background: #e4e0d7;
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
+      p {
+        width: 30%;
+      }
       img {
-        width: 80%;
+        width: 100%;
       }
     }
     .info_case {
@@ -232,28 +236,17 @@ body {
       justify-content: space-between;
     }
     .s_info {
-      font-size: 1.5em;
-      padding: 5% 10% 0 0;
+      padding: 20% 10% 0 0;
       line-height: 1.2;
+      p {
+        margin: 0;
+        color: #000;
+        font-size: 1.5em;
+      }
     }
     .site {
       font-weight: bold;
       padding-bottom: 10%;
-      h3 {
-        font-size: 2rem;
-      }
-      #line {
-        width: 100%;
-        height: 0.5rem;
-        border-radius: 4px;
-        background: #e4e0d7;
-        margin-top: 2%;
-      }
-      p {
-        color: #8c8a8a;
-        font-size: 1.2rem;
-        margin: 3% 0;
-      }
     } //e:site
   } //e:.page3
 } //e:swiper-wrapper
@@ -264,3 +257,291 @@ body {
 .swiper-button-prev::after {
   color: #dbc0ae;
 }
+
+@media all and (max-width: 1441px) {
+  .swiper-wrapper {
+    .page1 {
+      #left {
+        width: 45%;
+        #title {
+          h1 {
+            font-size: 3.5vw;
+          }
+          h2 {
+            margin: 11% auto;
+          }
+        }
+        #site_btn {
+          margin-bottom: 8%;
+          a {
+            font-size: 3rem;
+            padding: 2% 6%;
+          }
+        }
+        #work_info p {
+          font-size: 2rem;
+        }
+      }
+      #right {
+        width: 45%;
+      }
+    } //page1_end
+    .page2 {
+      .info_list {
+        height: 12vw;
+      }
+      .info_title {
+        font-size: 2.3em;
+        width: 22vw;
+      }
+      .info_text {
+        font-size: 1.8rem;
+        width: 55vw;
+        span {
+          font-size: 2rem;
+        }
+      }
+      #key {
+        li {
+          font-size: 1.8rem;
+          width: 10vw;
+          padding: 4vw 0;
+        }
+      }
+      #color {
+        li {
+          font-size: 1.8rem;
+          width: 9vw;
+          line-height: 2rem;
+        }
+      }
+      #font {
+        font-size: 2rem;
+      }
+      .guide {
+        width: 40%;
+      }
+    } //page2_end
+    .page3 {
+      .site_bg {
+        justify-content: center;
+        p {
+          width: 40%;
+        }
+      }
+      .s_info {
+        p {
+          font-size: 2rem;
+        }
+      }
+    } //page3_end
+  }
+} // width:1440px 이하
+
+@media all and (max-width: 921px) {
+  .swiper-wrapper {
+    .page1 {
+      #left {
+        width: 40%;
+        #title {
+          h1 {
+            font-size: 3vw;
+          }
+          h2 {
+            margin: 4% auto;
+          }
+        }
+        #site_btn {
+          margin-bottom: 4%;
+          a {
+            font-size: 2.5rem;
+          }
+        }
+        #work_info p {
+          font-size: 1.5rem;
+          line-height: 1.8rem;
+        }
+      }
+      #right {
+        width: 40%;
+      }
+    } //page1_end
+    .page2 {
+      .info_bg {
+        width: 70vw;
+      }
+      .info_list {
+        height: 9vw;
+      }
+      .info_title {
+        width: 20vw;
+        font-size: 2rem;
+      }
+      .info_text {
+        font-size: 1.5rem;
+        width: 50vw;
+        span {
+          font-size: 1.8rem;
+        }
+      }
+      #key {
+        li {
+          font-size: 1.5rem;
+          width: 8vw;
+          padding: 3vw 0;
+        }
+      }
+      #color {
+        li {
+          font-size: 1.5rem;
+          width: 8vw;
+          line-height: 1.5rem;
+        }
+      }
+      #font {
+        font-size: 1.5rem;
+      }
+    } //page2_end
+    .page3 {
+      .site_bg {
+        p {
+          width: 30%;
+        }
+      }
+      .info_case {
+        width: 25%;
+      }
+    } //page3_end
+  }
+} // width:920px 이하
+
+@media all and (max-width: 830px),
+  (max-width: 1025px) and (orientation: portrait) {
+  .swiper-wrapper {
+    .page1 {
+      flex-direction: column-reverse;
+      #left {
+        width: 60%;
+        #title {
+          h1 {
+            font-size: 5vw;
+          }
+          h2 img {
+            width: 60%;
+          }
+        }
+        #site_btn {
+          a {
+            font-size: 4rem;
+          }
+        }
+        #work_info p {
+          font-size: 3rem;
+          line-height: 3.5rem;
+        }
+      }
+      #right {
+        width: 60%;
+      }
+    } //page1_end
+    .page2 {
+      .g_right {
+        width: 100vw;
+        height: 30vh;
+        top: auto;
+      }
+      .info_bg {
+        width: 85vw;
+        height: 85vh;
+        margin: 0;
+        .info_all {
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          height: 100%;
+          justify-content: space-evenly;
+        }
+      }
+      .info_list {
+        height: 20vw;
+      }
+      .info_title {
+        width: 28vw;
+        font-size: 3.5rem;
+      }
+      .info_text {
+        font-size: 2.5rem;
+        span {
+          font-size: 3rem;
+        }
+      }
+      #key li {
+        font-size: 3rem;
+        width: 14vw;
+        padding: 5vw 0;
+      }
+      #color li {
+        font-size: 2.5rem;
+        width: 14vw;
+        line-height: 3rem;
+      }
+      #font {
+        font-size: 3rem;
+      }
+      .guide {
+        width: 100%;
+        text-align: right;
+      }
+    } //page2_end
+    .page3 {
+      flex-wrap: wrap;
+      align-items: flex-start;
+      .site_bg {
+        width: 100vw;
+        height: 70vh;
+        p {
+          width: 45%;
+        }
+      }
+      .site {
+        text-align: right;
+      }
+      .s_info {
+        padding: 6% 0 0 11%;
+        width: 85%;
+        text-align: right;
+        p {
+          font-size: 3rem;
+        }
+      }
+      .info_case {
+        width: 100vw;
+      }
+    } //page3_end
+    .g_item {
+      font-size: 2.5rem;
+      margin: 2% 0;
+      padding-right: 1%;
+    }
+    h3 {
+      font-size: 3rem;
+      padding-right: 1%;
+    }
+    #line {
+      display: inline-block;
+      width: 30vw;
+      text-align: right;
+    }
+  }
+} // width:720px이하 세로모드
+
+@media all and (max-width: 421px) and (orientation: portrait) {
+}
+/*
+1600
+1180
+481
+
+(orientation:portrait) _세로모드
+(orientation:landscape) _가로모드
+*/
