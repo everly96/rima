@@ -571,7 +571,7 @@ body a {
 }
 @media all and (max-width: 421px) {
   .swiper-wrapper .page1 {
-    justify-content: center;
+    justify-content: flex-end;
   }
   .swiper-wrapper .page1 #left {
     width: 80%;
@@ -589,6 +589,18 @@ body a {
     width: 85%;
     padding: 4vh 0;
   }
+  .swiper-wrapper .page2 {
+    background: #dae0ea;
+  }
+  .swiper-wrapper .page2 .g_left {
+    height: 10vh;
+  }
+  .swiper-wrapper .page2 .guide {
+    margin-top: 2vh;
+  }
+  .swiper-wrapper .page2 .info_bg {
+    height: 70vh;
+  }
   .swiper-wrapper .page2 .info_all .info_list {
     flex-wrap: wrap;
   }
@@ -604,6 +616,9 @@ body a {
   }
   .swiper-wrapper .page3 .guide {
     width: 20vh;
+  }
+  .swiper-wrapper .page3 .site_bg {
+    height: 70vh;
   }
   .swiper-wrapper .page3 #s_old {
     width: 45%;

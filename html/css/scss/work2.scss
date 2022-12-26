@@ -423,6 +423,7 @@ body {
   .swiper-wrapper {
     .page1 {
       flex-direction: column-reverse;
+      justify-content: flex-end;
       #left {
         width: 60%;
         #title {
@@ -445,6 +446,7 @@ body {
       }
       #right {
         width: 60%;
+        padding: 5vh 0;
       }
     } //page1_end
     .page2 {
@@ -455,7 +457,7 @@ body {
       }
       .info_bg {
         width: 85vw;
-        height: 85vh;
+        height: 80vh;
         margin: 0;
         .info_all {
           display: flex;
@@ -494,11 +496,13 @@ body {
       .guide {
         width: 100%;
         text-align: right;
+        bottom: 30%;
       }
     } //page2_end
     .page3 {
       flex-wrap: wrap;
       align-items: flex-start;
+      align-content: flex-start;
       .site_bg {
         width: 100vw;
         height: 70vh;

@@ -651,7 +651,7 @@ body {
 @media all and (max-width: 421px) {
   .swiper-wrapper {
     .page1 {
-      justify-content: center;
+      justify-content: flex-end;
       #left {
         width: 80%;
         #title h1 {
@@ -670,6 +670,16 @@ body {
       }
     } //page1_end
     .page2 {
+      background: #dae0ea;
+      .g_left {
+        height: 10vh;
+      }
+      .guide {
+        margin-top: 2vh;
+      }
+      .info_bg {
+        height: 70vh;
+      }
       .info_all {
         .info_list {
           flex-wrap: wrap;
@@ -689,6 +699,9 @@ body {
     .page3 {
       .guide {
         width: 20vh;
+      }
+      .site_bg {
+        height: 70vh;
       }
       #s_old {
         width: 45%;

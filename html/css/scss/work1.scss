@@ -319,6 +319,7 @@ body {
   .swiper-wrapper {
     .page1 {
       flex-direction: column-reverse;
+      justify-content: flex-end;
       #left {
         width: 80%;
         #title {
@@ -342,11 +343,13 @@ body {
       }
       #right {
         width: 80%;
+        padding: 5vh 0;
       }
     } //page1
     .page2 {
       .guide {
         width: 30%;
+        bottom: 25%;
         h3 {
           font-size: 4rem;
         }
@@ -404,6 +407,7 @@ body {
       align-items: center;
       .site {
         width: 30%;
+        bottom: 30%;
         p {
           font-size: 4rem;
         }
@@ -426,9 +430,12 @@ body {
       .s_img {
         flex-wrap: wrap;
         justify-content: flex-end;
+        align-content: flex-start;
+        align-items: flex-start;
         .site_img {
-          width: 70%;
-          height: 45%;
+          width: 60%;
+          height: 40%;
+          margin-right: 3%;
         }
       }
     } //page3

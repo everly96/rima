@@ -371,6 +371,7 @@ body a {
 @media all and (max-width: 830px), (max-width: 1025px) and (orientation: portrait) {
   .swiper-wrapper .page1 {
     flex-direction: column-reverse;
+    justify-content: flex-end;
   }
   .swiper-wrapper .page1 #left {
     width: 60%;
@@ -390,6 +391,7 @@ body a {
   }
   .swiper-wrapper .page1 #right {
     width: 60%;
+    padding: 5vh 0;
   }
   .swiper-wrapper .page2 .g_right {
     width: 100vw;
@@ -398,7 +400,7 @@ body a {
   }
   .swiper-wrapper .page2 .info_bg {
     width: 85vw;
-    height: 85vh;
+    height: 80vh;
     margin: 0;
   }
   .swiper-wrapper .page2 .info_bg .info_all {
@@ -437,10 +439,12 @@ body a {
   .swiper-wrapper .page2 .guide {
     width: 100%;
     text-align: right;
+    bottom: 30%;
   }
   .swiper-wrapper .page3 {
     flex-wrap: wrap;
     align-items: flex-start;
+    align-content: flex-start;
   }
   .swiper-wrapper .page3 .site_bg {
     width: 100vw;
