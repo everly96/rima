@@ -1,8 +1,25 @@
 @font-face {
-    font-family: 'NanumSquareRound';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "NanumSquareRound";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@font-face {
+  font-family: "MaruBuri-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+/*
+Secular One 웹폰트 링크 (영문폰트)
+*/
+
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+/*
+나눔스퀘어 웹폰트 링크 (한글폰트)
+*/

@@ -35,6 +35,9 @@ body a {
   background: #eeede8;
   margin-top: 2%;
 }
+.swiper-wrapper #line.g_item {
+  margin: 0;
+}
 .swiper-wrapper .g_item {
   color: #8c8a8a;
   font-size: 1.5rem;

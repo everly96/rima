@@ -36,6 +36,9 @@ body {
     border-radius: 4px;
     background: #eeede8;
     margin-top: 2%;
+    &.g_item {
+      margin: 0;
+    }
   }
   .g_item {
     color: #8c8a8a;
@@ -535,8 +538,6 @@ body {
   }
 } // width:720px이하 세로모드
 
-@media all and (max-width: 421px) and (orientation: portrait) {
-}
 /*
 1600
 1180

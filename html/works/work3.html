@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>work3</title>
+    <link href="../images/icon.png" rel="shortcut icon" />
     <link href="../css/reset.css" rel="stylesheet" />
     <link href="../css/work3.css" rel="stylesheet" />
     <link href="../css/font/font.css" rel="stylesheet" />
     <link
+      href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css"
       rel="stylesheet"
-      type="text/css"
-      href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css"
+    />
+    <link
+      href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css"
+      rel="stylesheet"
     />
     <link
       rel="stylesheet"
@@ -37,12 +41,12 @@
             </section>
             <!--//title-->
             <div class="btn">
-              <p id="site_btn">
+              <p>
                 <a href="http://skin-skin9.sotod0705.cafe24.com" target="_blank"
                   >Web site</a
                 >
               </p>
-              <p id="mobile_btn">
+              <p>
                 <a
                   onclick="window.open('http://skin-skin9.sotod0705.cafe24.com', '_blank', 'width=420 height=793')"
                   >Mobile site</a
@@ -52,8 +56,8 @@
             <!--//.btn-->
             <div id="work_info">
               <p><span>CATEGORY</span> REACTION DESIGN</p>
-              <p><span>PERIOD</span> 2020.12</p>
-              <p><span>DESIGN</span> 100% Personal Work</p>
+              <p><span>PERIOD</span> 2020.12 (3주)</p>
+              <p><span>DESIGN</span> 80% Personal Work, code pen</p>
               <p><span>TOOL</span> Photoshop, Illustrator</p>
             </div>
             <!--//work_info-->
@@ -67,39 +71,30 @@
           </div>
           <!--//right-->
         </div>
-        <!--// page1-->
 
         <div class="swiper-slide page2">
           <section class="g_left">
             <div class="guide">
               <h3>Design Guide</h3>
-              <p id="line"></p>
-              <p>Layout</p>
-              <p>Full page</p>
+              <p class="g_items" id="line"></p>
+              <p class="g_items">Layout</p>
             </div>
             <!--//guide-->
           </section>
-          <!--//g_left-->
-          <section class="info_bg">
-            <div class="info_left">
-              <ul>
-                <li>디자인 컨셉</li>
-                <li>디자인 키워드</li>
-                <li>디자인 컬러</li>
-                <li>폰트</li>
-              </ul>
-            </div>
-            <!--//info_left-->
-            <div class="info_right">
-              <ul>
-                <li id="c_letter">
-                  <span>행사</span>나 <span>이벤트</span>들을 메인으로 삼아
-                  <span>홍보하는 디자인</span>으로 고객에게
-                  <span>먼저 다가가는 이미지</span>를 연출하여 디자인
-                  하였습니다.
+          <div class="p2_info_case">
+            <section class="info_bg">
+              <ul class="info_all">
+                <li class="info_list">
+                  <p class="info_title">디자인 컨셉</p>
+                  <p class="info_text">
+                    <span>행사</span>나 <span>이벤트</span>들을 메인으로 삼아
+                    <span>홍보하는 디자인</span>으로 고객에게
+                    <span>먼저 다가가는 이미지</span>를 연출하여 디자인
+                    하였습니다.
+                  </p>
                 </li>
-
-                <li>
+                <li class="info_list">
+                  <p class="info_title">디자인 키워드</p>
                   <div id="key">
                     <ul>
                       <li>Approach</li>
@@ -107,10 +102,9 @@
                       <li>Familiar</li>
                     </ul>
                   </div>
-                  <!--//key-->
                 </li>
-
-                <li>
+                <li class="info_list">
+                  <p class="info_title">디자인 컬러</p>
                   <div id="color">
                     <ul>
                       <li>
@@ -133,33 +127,31 @@
                       </li>
                     </ul>
                   </div>
-                  <!--//color-->
                 </li>
-                <li>
-                  <span id="f_01">마루부리 BETA,</span>
-                  <span id="f_02">나눔스퀘어</span>
+                <li class="info_list">
+                  <p class="info_title">폰트</p>
+                  <div id="font">
+                    <ul>
+                      <span id="f_01">마루부리 BETA,</span>
+                      <span id="f_02">나눔스퀘어</span>
+                    </ul>
+                  </div>
                 </li>
               </ul>
-            </div>
-            <!--//info_right-->
-          </section>
-          <!--//info_bg-->
+            </section>
+          </div>
         </div>
-        <!--//page2-->
 
         <div class="swiper-slide page3">
-          <section class="site">
-            <p>Design Guide</p>
-            <h3>Layout</h3>
-            <p id="line"></p>
-            <p>Full page</p>
-          </section>
-          <!--//site-->
           <section class="site_bg">
             <p id="s_old"><img src="../images/works/hollys(01).png" /></p>
             <p id="s_new"><img src="../images/works/hollys(02).png" /></p>
           </section>
-          <!--//site_bg-->
+          <section class="guide">
+            <p class="g_items">Design Guide</p>
+            <h3>Layout</h3>
+            <p class="g_items" id="line"></p>
+          </section>
         </div>
       </div>
       <!-- Add Scrollbar -->
