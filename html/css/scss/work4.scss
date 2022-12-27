@@ -43,7 +43,7 @@ body {
       height: 0.5rem;
       border-radius: 4px;
     }
-    p {
+    .g_items {
       font-size: 1.2rem;
       margin: 3% 0;
     }
@@ -229,7 +229,7 @@ body {
         background: #eee6e6;
       }
 
-      p {
+      .g_items {
         color: #8c8a8a;
       }
     }
@@ -248,7 +248,7 @@ body {
       #line {
         background: #eee6e6;
       }
-      p {
+      .g_items {
         color: #8c8a8a;
       }
     } //e:site
@@ -281,7 +281,7 @@ body {
       h3 {
         font-size: 2.3vw;
       }
-      p {
+      .g_items {
         font-size: 1.7vw;
         margin: 4% 0;
       }
@@ -365,6 +365,121 @@ body {
 } //width:1440 ~
 
 @media all and (max-width: 1025px) and (orientation: portrait) {
+  .swiper-wrapper {
+    .guide {
+      h3 {
+        font-size: 3.5vw;
+      }
+      .g_items {
+        font-size: 2.8vw;
+      }
+    }
+    .page1 {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: flex-end;
+      #left,
+      #right {
+        width: 70%;
+      }
+      #left {
+        #title {
+          h1 {
+            font-size: 4.5vw;
+          }
+          h2 {
+            margin: 2vh auto;
+            img {
+              width: 45%;
+            }
+          }
+        }
+        .btn {
+          margin-bottom: 2vh;
+          p {
+            font-size: 3.5vw;
+          }
+        }
+        #work_info p {
+          font-size: 2.5vw;
+        }
+      }
+      #right {
+        #mac {
+          margin: 3vh auto;
+        }
+      }
+    } //page1_end
+    .page2 {
+      .guide {
+        padding-left: 25%;
+      }
+      .info_bg {
+        height: 85vh;
+      }
+      .info_all {
+        justify-content: flex-start;
+        .info_list {
+          height: 20vh;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-around;
+          &:last-child {
+            height: 10vh;
+          }
+        }
+        .info_items {
+          width: 80%;
+          text-align: center;
+          margin: 0 auto;
+        }
+        .info_title {
+          width: 30vw;
+          font-size: 4vw;
+          line-height: 1.4;
+        }
+        .info_text {
+          font-size: 2.5vw;
+          span {
+            font-size: 3.5vw;
+          }
+        }
+        #key {
+          li {
+            font-size: 3vw;
+          }
+        }
+        #color {
+          ul {
+            font-size: 2.5vw;
+          }
+          li {
+            width: 15vw;
+          }
+        }
+        #font {
+          font-size: 3vw;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    } //page2_end
+    .page3 {
+      .guide {
+        width: 25vw;
+        height: 12vh;
+      }
+      .site_bg {
+        height: 90vh;
+      }
+      #s_all {
+        img {
+          width: 85%;
+          margin-top: 10vh;
+        }
+      }
+    } //page3_end
+  }
 } //width:1024~ , 세로모드
 
 //(orientation: portrait)_세로모드 (orientation: landscape)_가로모드
