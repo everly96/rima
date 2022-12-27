@@ -196,7 +196,7 @@ nav {
 }
 .page3 .w_items {
   width: 90%;
-  height: 60vh;
+  height: 80vh;
   overflow-y: scroll;
   padding: 1rem 0;
   display: flex;
@@ -290,10 +290,10 @@ nav {
     width: 8rem;
   }
   .page3 .work_title {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .page3 .work_case .nav-item {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .page3 .w_items .item_w {
     width: 30rem;
