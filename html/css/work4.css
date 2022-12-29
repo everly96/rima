@@ -417,3 +417,90 @@ body a {
     margin-top: 10vh;
   }
 }
+@media all and (max-width: 921px) and (orientation: landscape) {
+  .swiper-wrapper .page1 #left,
+.swiper-wrapper .page1 #right {
+    width: 38%;
+  }
+  .swiper-wrapper .page1 #left #title h1 {
+    font-size: 3vw;
+  }
+  .swiper-wrapper .page1 #left #title h2 img {
+    width: 40%;
+  }
+  .swiper-wrapper .page2 .info_bg {
+    width: 75vw;
+    height: 100vh;
+  }
+  .swiper-wrapper .page2 .info_all .info_items {
+    width: 45vw;
+  }
+  .swiper-wrapper .page2 .info_all .info_text {
+    font-size: 1.5vw;
+  }
+  .swiper-wrapper .page2 .info_all .info_text span {
+    font-size: 1.8vw;
+  }
+  .swiper-wrapper .page2 .info_all #key li {
+    font-size: 1.5vw;
+    padding: 6.5vh 1vh;
+  }
+  .swiper-wrapper .page2 .info_all #color ul {
+    font-size: 1.5vw;
+  }
+  .swiper-wrapper .page2 .info_all #color li {
+    width: 8vw;
+  }
+  .swiper-wrapper .page2 .info_all #font {
+    font-size: 1.8vw;
+  }
+  .swiper-wrapper .page2 .g_left {
+    width: 25vw;
+    height: 100vh;
+    position: unset;
+    z-index: 0;
+  }
+  .swiper-wrapper .page2 .guide {
+    padding: 20% 0 0 35%;
+  }
+  .swiper-wrapper .page3 #s_all img {
+    width: 45%;
+  }
+}
+@media all and (max-width: 421px) and (orientation: portrait) {
+  .swiper-wrapper .guide h3 {
+    font-size: 4.5vw;
+  }
+  .swiper-wrapper .guide .g_items {
+    font-size: 3.5vw;
+  }
+  .swiper-wrapper .guide #line {
+    height: 1rem;
+  }
+  .swiper-wrapper .page2 .info_bg {
+    height: 75vh;
+  }
+  .swiper-wrapper .page2 .info_all .info_list {
+    height: 15vh;
+  }
+  .swiper-wrapper .page2 .info_all .info_title {
+    width: 40vw;
+    font-size: 5vw;
+  }
+  .swiper-wrapper .page2 .info_all .info_text {
+    font-size: 3.5vw;
+  }
+  .swiper-wrapper .page2 .info_all .info_text span {
+    font-size: 4vw;
+  }
+  .swiper-wrapper .page2 .info_all #key li {
+    font-size: 3.5vw;
+    padding: 3vh 0.5vh;
+  }
+  .swiper-wrapper .page2 .info_all #color ul {
+    font-size: 3vw;
+  }
+  .swiper-wrapper .page2 .guide {
+    padding: 20% 0 0 20%;
+  }
+}

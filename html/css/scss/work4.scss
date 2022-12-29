@@ -362,7 +362,7 @@ body {
       }
     } //page3_end
   }
-} //width:1440 ~
+} //width:1440 ~ , 가로&세로모드
 
 @media all and (max-width: 1025px) and (orientation: portrait) {
   .swiper-wrapper {
@@ -480,6 +480,124 @@ body {
       }
     } //page3_end
   }
-} //width:1024~ , 세로모드
+} //width:1024 ~ , 세로모드
+
+@media all and (max-width: 921px) and (orientation: landscape) {
+  .swiper-wrapper {
+    .page1 {
+      #left,
+      #right {
+        width: 38%;
+      }
+      #left {
+        #title {
+          h1 {
+            font-size: 3vw;
+          }
+          h2 {
+            img {
+              width: 40%;
+            }
+          }
+        }
+      }
+    } //page1_end
+    .page2 {
+      .info_bg {
+        width: 75vw;
+        height: 100vh;
+      }
+      .info_all {
+        .info_items {
+          width: 45vw;
+        }
+        .info_text {
+          font-size: 1.5vw;
+          span {
+            font-size: 1.8vw;
+          }
+        }
+        #key {
+          li {
+            font-size: 1.5vw;
+            padding: 6.5vh 1vh;
+          }
+        }
+        #color {
+          ul {
+            font-size: 1.5vw;
+          }
+          li {
+            width: 8vw;
+          }
+        }
+        #font {
+          font-size: 1.8vw;
+        }
+      }
+      .g_left {
+        width: 25vw;
+        height: 100vh;
+        position: unset;
+        z-index: 0;
+      }
+      .guide {
+        padding: 20% 0 0 35%;
+      }
+    } //page2_end
+    .page3 {
+      #s_all img {
+        width: 45%;
+      }
+    } //page3_end
+  }
+} //width: 920px ~ , 가로모드
+@media all and (max-width: 421px) and (orientation: portrait) {
+  .swiper-wrapper {
+    .guide {
+      h3 {
+        font-size: 4.5vw;
+      }
+      .g_items {
+        font-size: 3.5vw;
+      }
+      #line {
+        height: 1rem;
+      }
+    }
+    .page2 {
+      .info_bg {
+        height: 75vh;
+      }
+      .info_all {
+        .info_list {
+          height: 15vh;
+        }
+        .info_title {
+          width: 40vw;
+          font-size: 5vw;
+        }
+        .info_text {
+          font-size: 3.5vw;
+          span {
+            font-size: 4vw;
+          }
+        }
+        #key li {
+          font-size: 3.5vw;
+          padding: 3vh 0.5vh;
+        }
+        #color {
+          ul {
+            font-size: 3vw;
+          }
+        }
+      }
+      .guide {
+        padding: 20% 0 0 20%;
+      }
+    } //page2_end
+  }
+} // width:420px ~ , 세로모드
 
 //(orientation: portrait)_세로모드 (orientation: landscape)_가로모드
